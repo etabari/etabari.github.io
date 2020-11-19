@@ -113,16 +113,17 @@ appears on the left side of the page.
 #menu .pure-menu, #menu .pure-menu ul {
     border: none;
     background: transparent;
+    padding-top: 1em;
 }
 
 /*
     Add that light border to separate items into groups.
-    */
+    
 
 #menu .pure-menu ul, #menu .pure-menu .menu-item-divided {
     border-top: 1px solid #333;
 }
-
+*/
 /*
         Change color of the anchor links on hover/focus.
         */
@@ -135,7 +136,11 @@ appears on the left side of the page.
     This styles the selected menu item `<li>`.
     */
 
-#menu .pure-menu-selected, #menu .pure-menu-heading {
+/* #menu .pure-menu-heading {
+    background: #000000;
+} */
+
+#menu .pure-menu-selected {
     background: #1f8dd6;
 }
 

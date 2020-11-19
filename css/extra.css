@@ -1,0 +1,21 @@
+.image-cropper {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    /* menu width is 150px*/
+    /* background-color: rgb(226, 211, 211); */
+    /* color: cadetblue; */
+    /* border-width: 2px; */
+    /* border: cornflowerblue; */
+}
+.profile-pic {
+  display: inline;
+  height: 100%;
+  margin-left: -25%; /*centers the image */
+  width: auto;
+
+}
