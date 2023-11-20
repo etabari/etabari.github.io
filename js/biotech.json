@@ -3,5 +3,5 @@
     "/js/js_"
   ],
   "jsStart": "",
-  "jsEnd": ""
+  "jsEnd": "var paragraphs=document.querySelectorAll('.article-content__article_main_container p');paragraphs.forEach(function(paragraph){paragraph.style.fontSize='1.2rem';paragraph.style.lineHeight='1.4rem';});"
 }
