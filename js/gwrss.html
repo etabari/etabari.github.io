@@ -24,7 +24,7 @@
             })
             .catch(error => {
                 console.error('There has been a problem with your fetch operation:', error);
-                document.getElementById('rss-feed').textContent = 'Error loading feed.';
+                document.getElementById('rss-feed').textContent = 'Error loading feed: <br>' + error;
             });
     </script>
 </body>
