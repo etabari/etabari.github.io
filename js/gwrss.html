@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RSS Feed Loader</title>
+</head>
+<body>
+    <h1>RSS Feed</h1>
+    <div id="rss-feed">
+        Loading feed...
+    </div>
+
+    <script>
+        fetch('https://www.genomeweb.com/section/rss/news')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(data => {
+                // This is where you would process the RSS XML data
+                // For now, we'll just display it
+                document.getElementById('rss-feed').textContent = data;
+            })
+            .catch(error => {
+                console.error('There has been a problem with your fetch operation:', error);
+                document.getElementById('rss-feed').textContent = 'Error loading feed.';
+            });
+    </script>
+</body>
+</html>
