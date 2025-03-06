@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /public/
+Allow: /public/goya_paper/
